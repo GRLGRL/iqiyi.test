@@ -10,6 +10,7 @@ import org.apache.commons.cli.Options;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 
 import java.io.FileInputStream;
@@ -37,7 +38,9 @@ public class ReadDfsFileDemo {
     public static void main(String[] args)throws Exception
    {
        JobConf conf = new JobConf(ReadDfsFileDemo.class);
+       conf.set("mapreduce.job.queuename","qytt_daily");
        conf.setJobName("WordCountRC");
+       conf.setNumReduceTasks(6);
        conf.setOutputKeyClass(Text.class);
        conf.setOutputValueClass(Text.class);
        conf.setMapperClass(FileMapper.class);
@@ -51,14 +54,12 @@ public class ReadDfsFileDemo {
    }
 
 
-   public static class FileMapper extends  MapReduceBase implements Mapper<Text, Text, Text, Text>
+   public static class FileMapper extends  MapReduceBase implements Mapper<LongWritable, Text, Text, Text>
    {
-
-       public void map(Text key,Text value,OutputCollector<Text, Text> output,Reporter reporter) throws IOException
+       public void map(LongWritable key,Text value,OutputCollector<Text, Text> output,Reporter reporter) throws IOException
        {
-           String line = key.toString();
-       String arr[] = line.trim().split("^A");
-
+           String line = value.toString();
+           String arr[] = line.trim().split("^A");
            if (arr.length >= 2) {
                output.collect(new Text(arr[0]), new Text(arr[1]));
            }

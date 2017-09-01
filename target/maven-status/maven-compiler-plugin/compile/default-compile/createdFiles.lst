@@ -1,11 +1,14 @@
 iqiyi\ObjectStreamDemo.class
 iqiyi\ThreadConsumer.class
 iqiyi\ProducerConsumer.class
+iqiyi\Bank.class
+iqiyi\POIDemo.class
 iqiyi\ReadDfsFileDemo$FileReduce.class
 iqiyi\Stack.class
 iqiyi\App.class
 iqiyi\Pizza.class
 iqiyi\TestDemo.class
+iqiyi\raceCondition.class
 iqiyi\Producer.class
 iqiyi\FileMerge.class
 iqiyi\ThreadProducer.class
