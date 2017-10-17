@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.qiyi.knowledge:knowledge-store-entity-builder:1.3.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qiyi/knowledge/knowledge-store-entity-builder/1.3.0/knowledge-store-entity-builder-1.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qiyi/knowledge/knowledge-store-entity-builder/1.3.0/knowledge-store-entity-builder-1.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qiyi/knowledge/knowledge-store-entity-builder/1.3.0/knowledge-store-entity-builder-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.qiyi.knowledge:knowledge-sdk-java:1.4.170224">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qiyi/knowledge/knowledge-sdk-java/1.4.170224/knowledge-sdk-java-1.4.170224.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qiyi/knowledge/knowledge-sdk-java/1.4.170224/knowledge-sdk-java-1.4.170224-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qiyi/knowledge/knowledge-sdk-java/1.4.170224/knowledge-sdk-java-1.4.170224-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
